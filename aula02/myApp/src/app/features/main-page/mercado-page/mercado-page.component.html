@@ -1,0 +1,17 @@
+<h1 style="margin: 30px; color: rgb(250, 21, 21);">Mercado</h1>
+<div class="_mercados">
+    <div class="_mercado" *ngFor="let mercadoo of mercados, track:$index">
+        <div class="card">
+            <img [src]="mercadoo.image" alt="" height="260px" width="320px" style="border-radius: 10px;">
+            <br>
+            <div style="font-size: 20px; font-weight: bold; color: white;">
+                {{mercadoo.name}}
+            </div>
+            <br>
+            <h1 style="color: white; font-size: 15px;">{{mercadoo.description}}</h1> 
+            <h1 style="color: white; font-size: 15px;">Estoque: {{mercadoo.stock}}</h1>
+            <br>
+            <h1 style="color: white; font-size: 25px;">R${{mercadoo.price}}</h1>
+        </div>
+    </div>
+</div>

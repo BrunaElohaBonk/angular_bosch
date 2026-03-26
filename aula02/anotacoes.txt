@@ -1,0 +1,20 @@
+Estrutura:
+-> src
+    -> app
+        -> features               mercadoPage
+            -> loginPage         /      -> ProductCard
+            -> mainPage --------<        
+            -> notFoundPage      \
+        -> shared                 comidaPage
+            -> header                   -> FoodCard
+            -> button
+            -> input
+
+Roteamento:
+cd pasta
+ng g c features/login-page
+ng g c features/main-page
+ng g c features/not-found-page
+git init
+ng g c shared/header
+ng g c shared/nav
