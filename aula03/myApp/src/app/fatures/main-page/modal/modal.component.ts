@@ -7,7 +7,8 @@ import { BrowserModule } from "@angular/platform-browser";
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent {
-
+  //oioioioioioioi
+  
   @Output()
   onClose: EventEmitter<void> = new EventEmitter();
 
