@@ -1,0 +1,20 @@
+Comandos:
+npm install -g @angular/cli@16
+ng --help
+ng version
+ng new pasta
+yes
+CSS
+cd pasta
+npm start
+
+Apague todo o código do "app.component.html"
+
+PAI.TS                               -> app.component.ts
+    TEMPLATE.HTML <------------|     -> app.component.html   
+    |   COMPONENTE.TS <--------|--|  -> input.component.ts
+    |---|--> @input = var      |  |  
+        |    @output = ev.em --|  |
+        |    TEMPLATE.HTML        |  -> input.component.html
+        |------>[var] - input     |
+                (event) - output -|

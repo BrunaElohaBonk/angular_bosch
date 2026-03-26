@@ -1,0 +1,7 @@
+<app-header>
+    <router-outlet></router-outlet>
+</app-header>
+<app-modal *ngIf="close"(onClose)="toggleClose($event)">
+    <p class="p">Cadastro</p> 
+    <button class="button">Cadastrar</button> 
+</app-modal>

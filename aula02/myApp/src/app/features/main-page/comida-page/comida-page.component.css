@@ -1,0 +1,12 @@
+._menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+img {
+        height: 260px;
+        width: 320px;
+        border-radius: 10px;
+    }
