@@ -1,24 +1,32 @@
 <header>
-    <p style="font-weight: bold; font-size: 30px;">
-        B de básico
-    </p>
+  <p class="logo">RPlace</p>
 </header>
+
 <main>
-    <div class="aff">
-        <div class="card_container">
-            <div class="card_header">
-                <div style="display: flex; align-items: center; justify-content: center; height: 73px; width: 900px; font-size: 30px; font-weight: bold;">Login</div>
-                <img src="https://cdn-icons-png.flaticon.com/512/9972/9972749.png" value=" a" style="height: 25px; width: 25px; margin: 15px;">
-            </div>
-            <div class="card_main">
-                <div class="login-card">
-                    <input type="text" placeholder=" User: " [value]="Value" (input)="EnviarNome($event) ">
-                    <input type="text" placeholder=" Password: " [value]="Value" (input)="EnviarNome($event)">
-                </div>
-            </div>
-            <div class="card_footer">
-                <button> send </button>
-            </div>
-        </div>
+  <div class="aff">
+    <div class="card_container">
+
+      <div class="card_header">
+        <span>Login</span>
+        <img src="https://img.icons8.com/ios_filled/512/FFFFFF/cancel.png">
+      </div>
+
+      <div class="card_main">
+
+        <input 
+          type="text" 
+          placeholder="Usuário"
+          [(ngModel)]="username">
+
+        <input 
+          type="password" 
+          placeholder="Senha"
+          [(ngModel)]="password">
+
+        <button (click)="login()">Entrar</button>
+
+      </div>
+
     </div>
+  </div>
 </main>
