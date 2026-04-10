@@ -1,0 +1,31 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+
+<div class="container">
+
+  <header class="header">
+    <h1>RPlace</h1>
+  </header>
+
+  <div class="content">
+    <div class="card">
+      <div class="card-header">
+        <h2>Login</h2>
+      </div>
+
+      <div class="card-body">
+        <div class="form">
+          <input [(ngModel)]="email" placeholder="Email">
+          <input [(ngModel)]="password" type="password" placeholder="Senha">
+          <button routerLink="/rplace">Entrar</button>
+          <p>
+            Não tem conta?
+            <a routerLink="/register">Criar agora</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
