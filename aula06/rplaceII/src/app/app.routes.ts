@@ -6,8 +6,7 @@ import { RplacePage } from './features/rplace-page/rplace-page';
 // import { PixelPage } from './features/pixel-page/pixel-page';
 
 export const routes: Routes = [
-  { path: '', component: MainPage },
-  { path: 'login', component: LoginPage },
+  { path: '', component: LoginPage },
   { path: 'register', component: RegisterPage },
   { path: 'rplace', component: RplacePage },
   // { path: 'pixel', component: PixelPage },
