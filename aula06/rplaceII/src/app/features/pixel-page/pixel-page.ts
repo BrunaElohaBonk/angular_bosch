@@ -10,12 +10,11 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./pixel-page.css']
 })
 export class PixelPage {
-  PIXEL_SIZE = 4;
+  PIXEL_SIZE = 10;
   CANVAS_WIDTH = 800;
   CANVAS_HEIGHT = 600;
-  COLS = this.CANVAS_WIDTH / this.PIXEL_SIZE; // 200
-  ROWS = this.CANVAS_HEIGHT / this.PIXEL_SIZE; // 150
-
+  COLS = this.CANVAS_WIDTH / this.PIXEL_SIZE; 
+  ROWS = this.CANVAS_HEIGHT / this.PIXEL_SIZE; 
   pixels: string[][] = [];
   selectedColor: string = '#000000';
 
